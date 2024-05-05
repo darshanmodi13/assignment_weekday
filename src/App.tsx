@@ -1,7 +1,11 @@
+import { Box } from '@mui/material';
+
 function App() {
 	return (
 		<>
-			<h1>Hello World</h1>
+			<Box component="section" sx={{ border: '1px dashed grey' }} className="container">
+				This Box renders as an HTML section element.
+			</Box>
 		</>
 	);
 }
