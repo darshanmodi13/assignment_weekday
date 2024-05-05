@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 function App() {
 	return (
 		<>
-			<Box component="section" sx={{ border: '1px dashed grey' }} className="container">
+			<Box component="section" className="container" color="primary.main">
 				This Box renders as an HTML section element.
 			</Box>
 		</>
