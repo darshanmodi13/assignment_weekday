@@ -12,3 +12,12 @@ export type TJobDetails = {
 	minJdSalary: number;
 	salaryCurrencyCode: string;
 };
+
+export type TJobFilter = {
+	companyName: string;
+	remote: string[];
+	minimumPay: string;
+	experience: string;
+	locations: string[];
+	roles: string[];
+};
