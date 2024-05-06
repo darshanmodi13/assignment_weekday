@@ -11,10 +11,19 @@ type TJobsProps = {
 
 const Jobs = forwardRef<HTMLDivElement | null, TJobsProps>(({ jobs }, ref) => {
 	return (
-		<Grid container className="wrapper" gap={2} ref={ref}>
+		<Grid container className="wrapper" gap={5} ref={ref}>
 			{jobs.map((job, idx) => {
 				return (
-					<Grid item key={`${job.jdUid}_${idx}`} xs={3.9} sx={{ height: '300px', border: '1px dashed black' }}>
+					<Grid
+						item
+						key={`${job.jdUid}_${idx}`}
+						xs={3.7}
+						sx={{
+							transition: 'transform 0.3s',
+							'&:hover': {
+								transform: 'scale(1.02)',
+							},
+						}}>
 						<JobCard job={job} />
 					</Grid>
 				);

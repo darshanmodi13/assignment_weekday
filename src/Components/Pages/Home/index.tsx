@@ -26,7 +26,7 @@ const HomePage = () => {
 
 	// Handlers
 	const handleScroll = () => {
-		if (jobsRef.current && !loading && hasMore && window.innerHeight + window.scrollY + 200 >= jobsRef.current.scrollHeight) {
+		if (jobsRef.current && !loading && hasMore && window.innerHeight + window.scrollY + 500 >= jobsRef.current.scrollHeight) {
 			setPage((page) => page + 1);
 		}
 	};

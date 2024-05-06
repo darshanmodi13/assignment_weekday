@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', 'sans-serif';
 }
 
 *,
 *::after,
 *::before {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	line-height: 1.5;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
@@ -21,4 +30,30 @@ html {
 	width: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.font-13 {
+	font-size: 1.3rem !important;
+}
+
+.font-12 {
+	font-size: 1.2rem !important;
+}
+
+.font-14 {
+	font-size: 1.4rem !important;
+}
+
+.font-16 {
+	font-size: 1.6rem !important;
+}
+
+.card-bg {
+	border: 1px solid black;
 }

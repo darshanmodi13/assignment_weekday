@@ -18,6 +18,9 @@ const theme = createTheme({
 		primary: customColors.primary,
 		secondary: customColors.secondary,
 	},
+	typography: {
+		fontFamily: `"Montserrat", "sans-serif"`,
+	},
 });
 
 export default theme;
