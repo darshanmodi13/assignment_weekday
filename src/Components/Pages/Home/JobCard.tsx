@@ -15,7 +15,6 @@ type TJobCard = {
 };
 
 const JobCard = ({ job }: TJobCard) => {
-	console.log('🚀 ~ JobCard ~ job:', job);
 	const salary: number[] = [];
 	if (job.minJdSalary) salary.push(job.minJdSalary);
 	if (job.maxJdSalary) salary.push(job.maxJdSalary);

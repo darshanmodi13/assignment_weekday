@@ -36,7 +36,7 @@ const HomePage = () => {
 	// Effects
 	useEffect(() => {
 		if (!fetchedPages.has(page)) {
-			dispatch(fetchJobs({ page, limit: 30 }));
+			dispatch(fetchJobs({ page, limit: 10 }));
 			fetchedPages.add(page);
 		}
 	}, [dispatch, fetchedPages, page]);
